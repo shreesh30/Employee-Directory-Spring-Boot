@@ -15,6 +15,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 
     @Override
     public List<Employee> getEmployees() {
+        System.out.println("<======Executing getEmployees() ======>");
         return employeeRepository.findAll();
     }
 
