@@ -25,8 +25,11 @@ Creating an API for Employee Directory with all HTTP calls, Advices, logging, et
     * addDepartments
     * fetchDepartmentList
     * fetchDepartments
+
+## Adding Aspects,Interceptors and Repository
 4. Created Repository both for Employee and Department that extends JpaRepository
 5. Created a service class both for employee and departments which the controller will call to execute any get,put,post or delte operation
 6. Added @Before, @After, @AfterThrowing, @AfterReturning, @Around functions, to run when the EmployeeService functions are called
+7. A LoggerInterceptor class created that implements HandlerInterceptor in order to implement all the interceptors i.e. preHandle, postHanle and afterCompletion
 
   
